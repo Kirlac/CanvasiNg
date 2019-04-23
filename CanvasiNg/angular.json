@@ -23,7 +23,7 @@
               "projects/canvasi-ng-demo/src/assets"
             ],
             "styles": [
-              "projects/canvasi-ng-demo/src/styles.css"
+              "projects/canvasi-ng-demo/src/styles.scss"
             ],
             "scripts": [],
             "es5BrowserSupport": true
@@ -80,7 +80,7 @@
             "tsConfig": "projects/canvasi-ng-demo/tsconfig.spec.json",
             "karmaConfig": "projects/canvasi-ng-demo/karma.conf.js",
             "styles": [
-              "projects/canvasi-ng-demo/src/styles.css"
+              "projects/canvasi-ng-demo/src/styles.scss"
             ],
             "scripts": [],
             "assets": [

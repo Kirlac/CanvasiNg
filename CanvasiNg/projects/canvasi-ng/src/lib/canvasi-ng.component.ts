@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'cng-canvasi-ng',
   template: `
     <p>
-      canvasi-ng works!
+      canvasi-ng lib works!
     </p>
   `,
   styles: []

@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CanvasiNgComponent } from './canvasi-ng.component';
+import { CngCanvasComponent } from './cng-canvas/cng-canvas.component';
 
 @NgModule({
-  declarations: [CanvasiNgComponent],
+  declarations: [CanvasiNgComponent, CngCanvasComponent],
   imports: [
   ],
-  exports: [CanvasiNgComponent]
+  exports: [CanvasiNgComponent, CngCanvasComponent]
 })
 export class CanvasiNgModule { }

@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-lib": "ng build canvasi-ng",
+    "pack-lib": "cd dist/canvasi-ng && npm pack",
+    "pack": "npm run build-lib && npm run pack-lib"
   },
   "private": true,
   "dependencies": {
