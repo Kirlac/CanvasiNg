@@ -39,12 +39,4 @@ export class CngCanvasComponent implements OnInit, AfterViewInit {
     this.canvasCtx.fillStyle = this.backColor;
     this.canvasCtx.fillRect(0, 0, this.canvas.width, this.canvas.height);
   }
-  }
-
-  switchBgColor() {
-    // Add one and mod by array length to step through each array index
-    this.colorIndex = ++this.colorIndex % this.colors.length;
-    console.log(`Changing color to ${this.colors[this.colorIndex]}`);
-    this.canvasEl.nativeElement.style = `background: ${this.colors[this.colorIndex]}`;
-  }
 }
