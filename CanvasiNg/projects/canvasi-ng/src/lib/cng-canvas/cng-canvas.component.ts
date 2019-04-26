@@ -39,4 +39,28 @@ export class CngCanvasComponent implements OnInit, AfterViewInit {
     this.canvasCtx.fillStyle = this.backColor;
     this.canvasCtx.fillRect(0, 0, this.canvas.width, this.canvas.height);
   }
+
+  onMouseDown($event) {
+    console.log('Mouse btn is down');
+  }
+
+  onMouseMove($event) {
+    console.log('Mouse is moving');
+  }
+
+  onMouseUp($event) {
+    console.log('Mouse btn is up');
+  }
+
+  onTouchStart($event) {
+    console.log('Touch has started');
+  }
+
+  onTouchMove($event) {
+    console.log('Touch is moving');
+  }
+
+  onTouchEnd($event) {
+    console.log('Touch has ended');
+  }
 }
