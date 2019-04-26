@@ -23,7 +23,22 @@ export class CngCanvasComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    setInterval(() => { this.switchBgColor(); }, 1000);
+    this.initCanvas();
+  }
+
+  initCanvas() {
+    this.canvas = this.canvasEl.nativeElement;
+    this.canvasCtx = this.canvas.getContext('2d');
+    this.canvas.width = this.width;
+    this.canvas.height = this.height;
+
+    this.fillBg();
+  }
+
+  fillBg() {
+    this.canvasCtx.fillStyle = this.backColor;
+    this.canvasCtx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+  }
   }
 
   switchBgColor() {
