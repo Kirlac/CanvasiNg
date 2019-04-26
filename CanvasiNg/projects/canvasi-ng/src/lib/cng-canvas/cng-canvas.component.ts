@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, Input } from '@angular/core';
 
 @Component({
   selector: 'cng-canvas',
@@ -9,8 +9,13 @@ export class CngCanvasComponent implements OnInit, AfterViewInit {
 
   @ViewChild('canvas') canvasEl: ElementRef;
 
-  colors = ['#006fba', '#fff'];
-  colorIndex = 0;
+  private canvas = null;
+  private canvasCtx = null;
+
+  @Input() height = 500;
+  @Input() width = 500;
+  @Input() backColor = '#fff';
+  @Input() drawColor = '#000';
 
   constructor() { }
 
